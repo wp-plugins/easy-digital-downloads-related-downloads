@@ -2,9 +2,9 @@
 /**
  * Adds EDD Related Downloads widget
  *
- * @author Isabel Castillo
- * @package EDD Related Downloads
- * @extends WP_Widget
+ * @author 		Isabel Castillo
+ * @package 	EDD Related Downloads
+ * @extends 	WP_Widget
  */
 
 class edd_related_downloads_widget extends WP_Widget {
@@ -35,6 +35,8 @@ class edd_related_downloads_widget extends WP_Widget {
 		echo $before_widget;
 		if ( ! empty( $title ) )
 			echo '<h3 class="widget-title">'. $title . '</h3>';
+
+if( is_single() && ( 'download' == get_post_type() ) ) {
 
 	    global $post, $data;
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
@@ -77,6 +79,8 @@ class edd_related_downloads_widget extends WP_Widget {
           </ul></div>
 		<?php wp_reset_query();
 			}
+
+} // end here if is single download
 
 		echo $after_widget;
 
