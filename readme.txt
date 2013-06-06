@@ -90,8 +90,8 @@ If you want to specify parameters for this instance, use:
 However, the 2 above will style it just like the sidebar widget, which is list-style. If you want this to appear grid-style, like the default Related Downloads that get added below the content, you have to add the `$args` parameter, like so (you can change the $inst, but not the $args if you want grid-style):
 
 
-
-	`$inst = array( 
+`
+	$inst = array( 
 		'title' => 'You May Also Like',
 		'number' => 3,
 		'taxcat' => false,
