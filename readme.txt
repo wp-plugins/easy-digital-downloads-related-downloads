@@ -1,12 +1,10 @@
 ﻿=== Easy Digital Downloads - Related Downloads ===
-Author URI: http://isabelcastillo.com
-Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-related-downloads/
 Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.8
-Stable Tag: 1.5
+Tested up to: 3.9
+Stable Tag: 1.5.1
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,17 +17,15 @@ Automatically show related downloads by tag or category when using Easy Digital 
 This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
 **Optional - use it as widget**
-It also adds a Related Downloads widget.
+It also adds a Related Downloads widget. You can use the widget if you prefer, and disable the automatic related downloads under the content.
 
-**Unobtrusive Styling - Fits right into your theme**
 
-*   The featured images adopt your theme's style for `.wp-post-image`.
-*	You can modify the image style with this selector: `#isa-related-downloads img `
-*	Responsive CSS is included so it looks good on any size screen.
+ - Unobtrusive Styling - Fits right into your theme
+ - Responsive CSS is included so it looks good on any size screen.
 
 **Works automatically. No settings needed.**
 
-This plugin has 6 optional settings. These options are located at `Downloads --> Settings --> Misc tab`.
+This plugin has 6 optional settings. These options are located at `Downloads --> Settings --> Extensions tab`.
 
 1. Filter by Tag or Category
 2. Change the number of related items to show
@@ -41,15 +37,9 @@ This plugin has 6 optional settings. These options are located at `Downloads -->
 For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
 
-**Languages**
+**Translations**
 
-Includes `.mo` and `.po` files for these languages:
-
-- French
-- Portuguese
-- Spanish
-
-It also includes a `.pot` file so you can easily translate into other languages.
+Includes a `.pot` file so you can easily translate into other languages.
 
 
 For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
@@ -58,7 +48,7 @@ For support or to report bugs, use the support forum link above, or use [GitHub]
 == Installation ==
 
 1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress. That's it. At this point, related downloads, if any, will appear underneath each download.
 3. Optional: Go to `Downloads --> Settings --> Misc tab` to change the default settings.
 4. Optional: Use the widget at `Appearances --> Widgets`.
 
@@ -101,12 +91,19 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 = How can I give back? =
 
-[Please rate the plugin, Tweet about it, share it on Facebook](http://isabelcastillo.com/donate/), etc. Thank you. You can also follow me on your favorite social network: [Twitter](https://twitter.com/isabelphp), [Facebook](https://www.facebook.com/isabel.8991), [Google Plus](https://plus.google.com/111025990685359974539/posts)
+Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
 == Screenshots ==
 
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.5.1 = 
+* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po filenames with the new textdomain - easy-digital-downloads-related-downloads_. Old .mo and .po language files have been removed.
+* New: moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions" tab.
+* New: added width and height attributes to related images for increased page loading speed.
+* New: singleton class.
+* Maintenance: Tested and passed for WP 3.9 compatibility.
 
 = 1.5 =
 * New: added option to choose sort order and orderby parameters.
@@ -178,3 +175,6 @@ Tweak: Gave late priority to related downloads action to ensure that related ite
 
 = 1.5 =
 New: option to choose sort order and orderby parameters.
+
+= 1.5.1 =
+Moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions".
